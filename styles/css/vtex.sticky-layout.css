@@ -1,0 +1,15 @@
+
+  
+  .container{
+    background: #212121;
+    
+  }
+  
+  .wrapper--sticky-header{
+    transition: background 0.2s ease;
+    will-change: padding, background;
+  }
+
+
+
+

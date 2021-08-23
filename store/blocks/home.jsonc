@@ -1,0 +1,44 @@
+{
+  "store.home": {
+
+    "blocks": [
+      "list-context.image-list#banner"
+      
+    ] 
+  },
+  "list-context.image-list#banner": {
+    "children": [
+      "slider-layout#banner-images"
+    ],
+    "props": {
+      "height": 360,
+      "width": "70%",
+      "images": [
+        {
+          "image": "assets/banner-wood.png",
+          "mobileImage": "assets/banner-wood.png"
+        },
+        {
+          "image": "assets/guerreiros.png",
+          "mobileImage": "assets/guerreiros.png"
+        }
+      ]
+    }
+  },
+  "slider-layout#banner-images": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1        
+      },
+      "infinite": true,
+      "arrowSize": 12,      
+      "showNavigationArrows": "true",
+      "blockClass": "carousel"
+    }
+  }
+  
+}
+
+

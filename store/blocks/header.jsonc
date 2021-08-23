@@ -1,0 +1,215 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#desktop"
+    ]
+  },
+  "sticky-layout#desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#desktop", "tab-layout#desktop"]
+  },
+  "flex-layout.row#desktop": {
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "locale-switcher",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo"]
+  },
+  "logo": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/upmedal.png",
+      "width": "150"
+    }
+  },
+
+  "tab-layout#desktop": {
+    "children": [
+      "tab-list#desktop",
+      "tab-content#desktop"
+    ],
+    "props": {
+      "blockClass": "tab-layout",
+      "defaultActiveTabId": "home"
+    }
+  },
+
+  "tab-list#desktop": {
+    "children": [
+      "tab-list.item#Promoção",
+      "tab-list.item#Corinthians",
+      "tab-list.item#Palmeiras",
+      "tab-list.item#Signos",
+      "tab-list.item#Divertidos",
+      "tab-list.item#7Maravilhas",
+      "tab-list.item#Guerreiros"
+    ],
+    "props": {
+      "blockClass": "tab-list"
+    }
+  },
+
+  "tab-list.item#Promoção": {
+    "props": {
+      "tabId": "Promoção",
+      "label": "Promoção",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#Corinthians": {
+    "props": {
+      "tabId": "Corinthians",
+      "label": "Corinthians"
+    }
+  },
+  "tab-list.item#Palmeiras": {
+    "props": {
+      "tabId": "Palmeiras",
+      "label": "Palmeiras"
+    }
+  },
+  "tab-list.item#Signos": {
+    "props": {
+      "tabId": "Signos",
+      "label": "Signos"
+    }
+  },
+  "tab-list.item#Divertidos": {
+    "props": {
+      "tabId": "Divertidos",
+      "label": "Divertidos"
+    }
+  },
+  "tab-list.item#7Maravilhas": {
+    "props": {
+      "tabId": "7Maravilhas",
+      "label": "7 Maravilhas"
+    }
+  },
+
+  "tab-list.item#Guerreiros": {
+    "props": {
+      "tabId": "Guerreiros",
+      "label": "Guerreiros"
+    }
+  },
+
+
+  
+  "tab-content#desktop": {
+    "children": [
+      "tab-content.item#Promoção",
+      "tab-content.item#Corinthians",
+      "tab-content.item#Palmeiras",
+      "tab-content.item#Signos",
+      "tab-content.item#Divertidos",
+      "tab-content.item#7Maravilhas",
+      "tab-content.item#Guerreiros"
+    ]
+  },
+
+ 
+  "tab-content.item#Promoção": {
+    "children": [],
+    "props": {
+      "tabId": "Promoção"
+    }
+  },
+  "tab-content.item#Corinthians": {
+    "children": [],
+    "props": {
+      "tabId": "Corinthians"
+    }
+  },
+  "tab-content.item#Palmeiras": {
+    "children": [],
+    "props": {
+      "tabId": "Palmeiras"
+    }
+  },
+  "tab-content.item#Signos": {
+    "children": [],
+    "props": {
+      "tabId": "Signos"
+    }
+  },
+  "tab-content.item#Divertidos": {
+    "children": [],
+    "props": {
+      "tabId": "Divertidos"
+    }
+  },
+  "tab-content.item#7Maravilhas": {
+    "children": [],
+    "props": {
+      "tabId": "7Maravilhas"
+    }
+  },
+
+  "tab-content.item#Guerreiros": {
+    "children": [],
+    "props": {
+      "tabId": "Guerreiros"
+    }
+  },
+
+  
+
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },
+  "sticky-layout#mobile": {
+    "children": ["flex-layout.row#mobile", "tab-layout#desktop"]
+  },
+  "flex-layout.row#mobile": {
+    "children": [
+      "drawer",
+      "logo",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "drawer": {
+    "children": []
+  }
+}
+
+
+  
